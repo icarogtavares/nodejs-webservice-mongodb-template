@@ -18,12 +18,6 @@ const options = {
  	}
 }
 
-function error(status, msg) {
-  var err = new Error(msg);
-  err.status = status;
-  return err;
-}
-
 const configureExpress = () => {
 	app.use(morgan('common'));
 	// app.use(express.static(__dirname + '/public'));
