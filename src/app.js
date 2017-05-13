@@ -4,7 +4,8 @@ import bodyParser from 'body-parser';
 import morgan from 'morgan';
 
 import routes from './routes';
-import middlewares from './middlewares';
+import middlewaresBeforeRoutes from './middlewares/before';
+import middlewaresAfterRoutes from './middlewares/after';
 
 import database from './config/database';
 
@@ -25,8 +26,9 @@ const configureExpress = () => {
 	app.use(bodyParser.json());
 	app.use(expressValidator(options));
 
-	app.use('/', routes);
-	app.use('/', middlewares);
+	// app.use(middlewaresBeforeRoutes);
+	app.use(routes);
+	app.use(middlewaresAfterRoutes);
 
 	return app;
 }

@@ -2,7 +2,7 @@ import setupApp from './src/app';
 import mongoose from 'mongoose';
 
 function startApp() {
-	const port = process.env.PORT || 3000;
+	const port = process.env.PORT || 4000;
 
 	setupApp()
 		.then(app => app.listen(port, () => console.log(`App running at http://localhost:${port}`)))
