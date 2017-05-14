@@ -46,6 +46,7 @@
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
     "express-validator": "^3.2.0",
+    "helmet": "^3.6.0",
     "memjs": "^0.10.2",
     "mongoose": "^4.9.2",
     "morgan": "^1.8.1"

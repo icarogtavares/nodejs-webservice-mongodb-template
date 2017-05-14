@@ -2,6 +2,7 @@ import express from 'express';
 import expressValidator from 'express-validator';
 import bodyParser from 'body-parser';
 import morgan from 'morgan';
+import helmet from 'helmet';
 
 import routes from './routes';
 import middlewaresBeforeRoutes from './middlewares/before';
@@ -20,6 +21,8 @@ const options = {
 }
 
 const configureExpress = () => {
+	app.use(helmet());
+	app.use(helmet.noCache());
 	app.use(morgan('common'));
 	// app.use(express.static(__dirname + '/public'));
 
