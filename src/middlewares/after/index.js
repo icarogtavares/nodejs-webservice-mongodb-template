@@ -5,7 +5,7 @@ import notFound from './not-found';
 
 const router = express.Router();
 
-router.use(badRequest);
 router.use(notFound);
+router.use(badRequest);
 
 export default router;
