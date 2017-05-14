@@ -44,9 +44,9 @@ class ProductsController {
 		req.sanitizeBody('name').trim();
 		req.sanitizeBody('description').trim();
 
-		var product = req.body;
+		var products = req.body;
 
-		return this.Product.create(product)
+		return this.Product.create(products)
 			.then(product => {
 
 				//HATEOAS
@@ -68,7 +68,7 @@ class ProductsController {
 
 				res.location('/products/' + product._id);
 
-				// this.memjsClient.set(product._id, product, {expires: 60000}, (err, val) => {})
+				// this.memjsClient.set(product._id, product, {expires: 60000}, (err, val) => {});
 
 				res.status(201).send(response);
 			})
