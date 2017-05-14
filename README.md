@@ -1,4 +1,4 @@
-# nodejs-webservice-template
+# nodejs-webservice-mongodb-template
 - Template of a webservice in NodeJS using **MongoDB** as database. This code is based on **node packages documentation**, **alura courses** and in
 the book of [NodeJS by Waldemar Neto](https://github.com/waldemarnt/building-testable-apis-with-nodejs).
 
