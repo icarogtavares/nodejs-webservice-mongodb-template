@@ -16,5 +16,5 @@ If you want to use this template in production, I advise using [Winston](https:/
 
 Why? https://strongloop.com/strongblog/compare-node-js-logging-winston-bunyan/
 
-NodeJS Version 6.10.3
-NPM Version 3.10.10
+**- NodeJS Version 6.10.3
+- NPM Version 3.10.10**
